@@ -1,0 +1,63 @@
+body {
+	height: 100vh;
+	background: #ff9966;
+	background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);
+	background: linear-gradient(to right, #ff5e62, #ff9966);
+	font-family: 'Lato', sans-serif;
+}
+
+#avatar {
+	margin: 0 auto;
+	margin-top: -60px;
+	margin-bottom: 20px;
+	background-image: url('/images/avatar.jpg');
+	height: 120px;
+	width: 120px;
+}
+
+#botIntro {
+	font-weight: 300;
+	width: 70%;
+}
+
+#botLogo {
+	background-image: url('/images/logo-bot.svg');
+	height: 2.5rem;
+	width: 2.5rem;
+}
+
+#contentBox {
+	background-color: white;
+	border-color: white;
+	text-align: center;
+}
+
+#head h1 {
+	font-size: 1.3rem;
+	font-weight: 400;
+}
+
+#head h2 {
+	font-size: 1.2rem;
+	font-weight: 300;
+}
+
+#socialLinks a {
+	color: gray;
+}
+
+#socialLinks a:hover {
+	color: #ff5e62;
+}
+
+.skype-chat {
+	height: 20rem;
+}
+
+.skype-chat .lwc-chat-frame {
+	animation: none;
+	box-shadow: none;
+	height: 100%;
+	position: static;
+	width: 100%;
+}

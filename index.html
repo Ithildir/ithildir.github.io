@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Andrea Di Giorgi</title>
+
+	<meta name="author" content="Andrea Di Giorgi">
+	<meta name="description" content="My Personal Website">
+
+	<link rel="icon" type="image/x-icon" href="/favicon.ico">
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/basscss/8.0.3/css/basscss.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400">
+	<link rel="stylesheet" href="https://unpkg.com/basscss-background-images@0.1.1/css/background-images.css">
+	<link rel="stylesheet" href="/css/main.css">
+
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+
+<body class="flex items-center justify-center">
+	<div class="border max-width-2 p1 rounded" id="contentBox">
+		<div id="head">
+			<div class="bg-cover circle" id="avatar"></div>
+
+			<h1>Hello, I'm Andrea Di Giorgi!</h1>
+			<h2>Senior Software Engineer in Los Angeles, California</h2>
+		</div>
+		<ul class="list-reset pb2 pt2" id="socialLinks">
+			<li class="inline-block mr1">
+				<a href="https://github.com/Ithildir" target="_blank" title="Visit Me on GitHub">
+					<i class="fab fa-github fa-2x"></i>
+				</a>
+			</li>
+			<li class="inline-block mr1">
+				<a href="https://www.linkedin.com/in/ithildir" target="_blank" title="Visit Me on LinkedIn">
+					<i class="fab fa-linkedin fa-2x"></i>
+				</a>
+			</li>
+			<li class="inline-block mr1">
+				<a href="https://stackoverflow.com/users/799771/andrea-di-giorgi" target="_blank" title="Visit Me on Stack Overflow">
+					<i class="fab fa-stack-overflow fa-2x"></i>
+				</a>
+			</li>
+			<li class="inline-block mr1">
+				<a href="https://twitter.com/PioneerOverC" target="_blank" title="Visit Me on Twitter">
+					<i class="fab fa-twitter fa-2x"></i>
+				</a>
+			</li>
+			<li class="inline-block">
+				<a href="https://facebook.com/ithildir" target="_blank" title="Visit Me on Facebook">
+					<i class="fab fa-facebook fa-2x"></i>
+				</a>
+			</li>
+		</ul>
+		<div class="flex justify-center">
+			<div class="pr2" id="botIntro">Do you want to know more about me? My personal assistant will answer all your questions!</div>
+			<div class="bg-cover" id="botLogo"></div>
+		</div>
+		<div class="mt3" id="chat">
+			<div
+				class="display-none skype-button"
+				data-bot-id="1ce522dd-544b-475f-ab09-c1218ebb9c42"
+				data-disable-sending-emoticons="true"
+			></div>
+
+			<div
+				class="skype-chat"
+				data-can-close="false"
+				data-can-collapse="false"
+				data-css-url="https://ithildir.github.io/css/skype.css"
+				data-can-upload-file="false"
+				data-entry-animation="false"
+				data-guest-only="true"
+				data-show-header="false"
+			></div>
+		</div>
+	</div>
+
+	<script src="//swc.cdn.skype.com/sdk/v1/sdk.min.js"></script>
+
+	<script>
+		var startChatInterval = setInterval(
+			function() {
+				var chatButtons = document.getElementsByClassName('lwc-chat-button');
+
+				if (chatButtons.length > 0) {
+					clearInterval(startChatInterval);
+
+					chatButtons[0].click();
+				}
+			},
+			500
+		);
+	</script>
+</body>
+
+</html>
