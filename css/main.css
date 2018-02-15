@@ -1,7 +1,8 @@
 body {
-	background: #ff9966;
-	background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);
-	background: linear-gradient(to right, #ff5e62, #ff9966);
+	background: #ff5e62;
+	background: -moz-linear-gradient(-45deg, #ff5e62 0%, #ff9966 100%);
+	background: -webkit-linear-gradient(-45deg, #ff5e62 0%,#ff9966 100%);
+	background: linear-gradient(135deg, #ff5e62 0%,#ff9966 100%);
 	font-family: 'Lato', sans-serif;
 	height: 100vh;
 }
