@@ -24,14 +24,14 @@
 </head>
 
 <body class="flex items-center justify-center">
-	<div class="border max-width-2 p1 rounded" id="contentBox">
+	<div class="border flex flex-column max-width-2 p1 rounded" id="contentBox">
 		<div id="head">
-			<div class="bg-cover circle xs-hide" id="avatar"></div>
+			<div class="bg-cover circle" id="avatar"></div>
 
 			<h1>Hello, I'm Andrea Di Giorgi!</h1>
 			<h2>Senior Software Engineer in Los Angeles, California</h2>
 		</div>
-		<ul class="list-reset pb2 pt2" id="socialLinks">
+		<ul class="list-reset pb2 pt1" id="socialLinks">
 			<li class="inline-block mr1">
 				<a href="https://github.com/Ithildir" target="_blank" title="Visit Me on GitHub">
 					<i class="fab fa-github fa-2x"></i>
@@ -62,24 +62,22 @@
 			<div class="pr2" id="botIntro">Do you want to know more about me? My personal assistant will answer all your questions!</div>
 			<div class="bg-cover" id="botLogo"></div>
 		</div>
-		<div class="mt3" id="chat">
-			<div
-				class="display-none skype-button"
-				data-bot-id="1ce522dd-544b-475f-ab09-c1218ebb9c42"
-				data-disable-sending-emoticons="true"
-			></div>
-
-			<div
-				class="skype-chat"
-				data-can-close="false"
-				data-can-collapse="false"
-				data-css-url="https://ithildir.github.io/css/skype.css"
-				data-can-upload-file="false"
-				data-entry-animation="false"
-				data-guest-only="true"
-				data-show-header="false"
-			></div>
-		</div>
+		<div
+			class="display-none skype-button"
+			data-bot-id="1ce522dd-544b-475f-ab09-c1218ebb9c42"
+			data-disable-sending-emoticons="true"
+		></div>
+		<div
+			class="flex-auto mt3 skype-chat"
+			id="chat"
+			data-can-close="false"
+			data-can-collapse="false"
+			data-css-url="https://ithildir.github.io/css/skype.css"
+			data-can-upload-file="false"
+			data-entry-animation="false"
+			data-guest-only="true"
+			data-show-header="false"
+		></div>
 	</div>
 
 	<script src="//swc.cdn.skype.com/sdk/v1/sdk.min.js"></script>

@@ -1,17 +1,15 @@
 body {
-	height: 100vh;
 	background: #ff9966;
 	background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);
 	background: linear-gradient(to right, #ff5e62, #ff9966);
 	font-family: 'Lato', sans-serif;
+	height: 100vh;
 }
 
 #avatar {
-	margin: 0 auto;
-	margin-top: -60px;
-	margin-bottom: 20px;
 	background-image: url('/images/avatar.jpg');
 	height: 120px;
+	margin: -60px auto 20px auto;
 	width: 120px;
 }
 
@@ -29,6 +27,7 @@ body {
 #contentBox {
 	background-color: white;
 	border-color: white;
+	height: 80%;
 	text-align: center;
 }
 
@@ -50,14 +49,46 @@ body {
 	color: #ff5e62;
 }
 
-.skype-chat {
-	height: 20rem;
+#chat {
+	height: 100%;
 }
 
-.skype-chat .lwc-chat-frame {
+#chat .lwc-chat-frame {
 	animation: none;
 	box-shadow: none;
 	height: 100%;
 	position: static;
 	width: 100%;
+}
+
+@media (max-height: 40em) {
+	#avatar {
+		display: none;
+	}
+
+	#botLogo {
+		background-image: url('/images/logo-bot-white.svg');
+	}
+
+	#chat {
+		background-color: white;
+		border-radius: 3px;
+		border: solid 1px white;
+		padding: 0.5rem;
+	}
+
+	#contentBox {
+		background-color: transparent;
+		border: 0;
+		color: white;
+		height: 97vh;
+	}
+
+	#socialLinks a {
+		color: white;
+	}
+
+	#socialLinks a:hover {
+		color: #00aff0;
+	}
 }
