@@ -1,8 +1,5 @@
 body {
-	background: #ff5e62;
-	background: -moz-linear-gradient(-45deg, #ff5e62 0%, #ff9966 100%);
-	background: -webkit-linear-gradient(-45deg, #ff5e62 0%,#ff9966 100%);
-	background: linear-gradient(135deg, #ff5e62 0%,#ff9966 100%);
+	background: linear-gradient(135deg, #FF5E62 0%, #F96 100%);
 	font-family: 'Lato', sans-serif;
 	height: 100vh;
 }
@@ -26,15 +23,15 @@ body {
 }
 
 #contentBox {
-	background-color: white;
-	border-color: white;
+	background-color: #FFF;
+	border-color: #FFF;
 	height: 80%;
 	text-align: center;
 }
 
 #head h1 {
 	font-size: 1.3rem;
-	font-weight: 400;
+	font-weight: normal;
 }
 
 #head h2 {
@@ -43,11 +40,11 @@ body {
 }
 
 #socialLinks a {
-	color: gray;
+	color: #808080;
 }
 
 #socialLinks a:hover {
-	color: #ff5e62;
+	color: #FF5E62;
 }
 
 #chat {
@@ -72,24 +69,24 @@ body {
 	}
 
 	#chat {
-		background-color: white;
+		background-color: #FFF;
+		border: solid 1px #FFF;
 		border-radius: 3px;
-		border: solid 1px white;
 		padding: 0.5rem;
 	}
 
 	#contentBox {
 		background-color: transparent;
 		border: 0;
-		color: white;
+		color: #FFF;
 		height: 97vh;
 	}
 
 	#socialLinks a {
-		color: white;
+		color: #FFF;
 	}
 
 	#socialLinks a:hover {
-		color: #00aff0;
+		color: #00AFF0;
 	}
 }
