@@ -25,7 +25,8 @@ body {
 #contentBox {
 	background-color: #FFF;
 	border-color: #FFF;
-	height: 80%;
+	height: 85%;
+	margin-top: 60px;
 	text-align: center;
 }
 
@@ -80,6 +81,7 @@ body {
 		border: 0;
 		color: #FFF;
 		height: 97vh;
+		margin-top: 0;
 	}
 
 	#socialLinks a {
