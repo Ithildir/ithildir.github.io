@@ -25,7 +25,7 @@
 </head>
 
 <body class="flex items-center justify-center">
-	<div class="border flex flex-column max-width-4 mt3 p1 rounded" id="contentBox">
+	<div class="border flex flex-column max-width-4 mt3 rounded" id="contentBox">
 		<div class="center" id="head">
 			<div class="bg-cover circle" id="avatar"></div>
 
@@ -62,13 +62,13 @@
 			</li>
 		</ul>
 
-		<div class="flex justify-center pb1">
+		<div class="flex justify-center pb2">
 			<div class="pr2" id="botIntro">Do you want to know more about me? My personal assistant will answer all your
 				questions!</div>
 			<div class="bg-cover" id="botLogo"></div>
 		</div>
 
-		<div class="flex-auto max-width-3 overflow-auto" id="webchat"></div>
+		<div class="flex-auto overflow-auto" id="webchat"></div>
 	</div>
 
 	<script>
@@ -77,6 +77,10 @@
 				directLine: window.WebChat.createDirectLine({
 					secret: '9n0P9UoME2c.cwA.W8o.sfrJGC59_NHoVEcAR4kuCekJOC0358bI_FJcX_YtXgE'
 				}),
+				styleOptions: {
+					hideUploadButton: true,
+					primaryFont: "'Lato', sans-serif",
+				},
 			},
 			document.getElementById('webchat'),
 		);
