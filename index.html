@@ -72,11 +72,24 @@
 	</div>
 
 	<script>
+		const store = window.WebChat.createStore({}, ({ dispatch }) => next => action => {
+			if (action.type === 'DIRECT_LINE/CONNECT_FULFILLED') {
+				dispatch({
+					type: 'WEB_CHAT/SEND_MESSAGE_BACK',
+					payload: {
+						text: 'Hello',
+					}
+				});
+			}
+			return next(action);
+		});
+
 		window.WebChat.renderWebChat(
 			{
 				directLine: window.WebChat.createDirectLine({
 					secret: '9n0P9UoME2c.cwA.W8o.sfrJGC59_NHoVEcAR4kuCekJOC0358bI_FJcX_YtXgE'
 				}),
+				store,
 				styleOptions: {
 					hideUploadButton: true,
 					primaryFont: "'Lato', sans-serif",
